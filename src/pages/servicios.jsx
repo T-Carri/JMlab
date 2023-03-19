@@ -16,7 +16,7 @@ import GlobalStyles from '@mui/material/GlobalStyles';
 import Container from '@mui/material/Container';
 import { useNavigate } from 'react-router-dom';
 import { Icon } from '@mui/material';
-
+import './servicios.css'
 function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
@@ -47,7 +47,7 @@ const tiers = [
   {
     title: '¿Necesitas una pagina web?',
     descripcion:'Creacion de paginas web estaticas y app web, cotiza un proyecto.',
-    buttonText: 'Cotiza',
+    buttonText: 'Contactanos',
     buttonVariant: 'outlined',
   },
 ];
@@ -66,37 +66,12 @@ function handleClick(e) {
     <React.Fragment>
       <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
       <CssBaseline />
-      <AppBar
-        position="static"
-        color="default"
-        elevation={0}
-        sx={{ borderBottom: (theme) => `1px solid ${theme.palette.divider}` }}
-      >
-        <Toolbar sx={{ flexWrap: 'wrap' }}>
-            <Icon  onClick={()=>navigate('/')} color="inherit"  noWrap  sx={{ flexGrow: 1 }}>
-            <Typography  variant="h5" color="inherit" noWrap sx={{ flexGrow: 1 }}>
-            JMlab
-          </Typography>
-
-            </Icon>
-          
-          
-         
-        </Toolbar>
-      </AppBar>
+  
       {/* Hero unit */}
-      <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, pb: 6 }}>
-        <Typography
-          component="h1"
-          variant="h2"
-          align="center"
-          color="text.primary"
-          gutterBottom
-        >
-          Encuentra tu solucion
-        </Typography>
+      <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 3, pb: 3 }}>
+     
         
-      </Container>
+      </Container> */
       {/* End hero unit */}
       <Container maxWidth="md" component="main">
         <Grid container spacing={5} alignItems="flex-end">

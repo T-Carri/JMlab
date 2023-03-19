@@ -4,7 +4,7 @@ body {
   
   .full-screen-container {
     background-image: url("3.jpg");
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     background-size: cover;
     background-position: center;
@@ -24,7 +24,7 @@ body {
   
   .bottom-right-container {
    
-    position: absolute;
+    position: flex;
     bottom: 0;
     right: 0;
     padding: 20px;
@@ -62,6 +62,7 @@ color: #d8d7f6;
     width: 70vh;
     height: 10em;
     padding: 2em;
+    padding-left: 3em;
     /* background-color: brown; */
   }
 
