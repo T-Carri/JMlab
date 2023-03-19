@@ -56,6 +56,11 @@ const tiers = [
 
 function PricingContent() {
 const navigate = useNavigate()
+function handleClick(e) {
+    e.preventDefault();
+    window.location.href = "https://wa.me/5533996830";
+  } 
+
 
   return (
     <React.Fragment>
@@ -148,7 +153,7 @@ const navigate = useNavigate()
                   </ul> */}
                 </CardContent>
                 <CardActions>
-                  <Button fullWidth variant={tier.buttonVariant}>
+                  <Button onClick={handleClick} fullWidth variant={tier.buttonVariant}>
                     {tier.buttonText}
                   </Button>
                 </CardActions>
