@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+  }
+  
+  .full-screen-container {
+    background-image: url("3.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bottom-right-container {
+    margin: 0 auto;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .bottom-right-container {
+      text-align: center;
+    }
+  }
+  
+  .bottom-right-container {
+   
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+    /*  background-color: #d8d7f6; */
+    
+    width: 100vh;
+    height: 30em;
+  }
+  div#explora{
+   
+
+width: 60vh;
+height: 1em;
+ /* background-color: blue; */
+ bottom: 0;
+ right: 0;
+ font-family: 'Fira Sans Condensed', 'sans-serif';
+font-family: 'Rubik Iso', 'cursive';
+font-size: 3em;
+padding: 2em;
+
+color: #d8d7f6; 
+  }
+  :root {
+    --primary-dark-hsl: 104, 86%, 45%;
+  }
+  
+ 
+  p#soluciones:hover {
+    --color: hsl(var(--primary-dark-hsl), .7);
+    color: hsl(var(--primary-dark-hsl), .7);
+  text-shadow: 0 0 15px hsl(var(--primary-dark-hsl), .7);
+  }
+  div#cotiza{
+    width: 70vh;
+    height: 10em;
+    padding: 2em;
+    /* background-color: brown; */
+  }
+
+  ul{
+    position: relative;
+    display: flex;
+
+  }
+
+  ul li {
+    position: relative;
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+  }
+
+  ul li a{
+    text-decoration: none;
+  }
+
+  ul li a .fa-brands{
+    font-size:6em;
+    color: #222;
+  }
+
+  ul li::before{
+    font-family: "FontAwesome";
+    position: absolute;
+    top:0;
+    left: 0;
+    font-size: 6em;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+
+  }
+
+  ul li:nth-child(1)::before{
+    content: "\f16d";
+    background-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 4px solid #dc2743;
+
+  }
+
+  ul li:nth-child(2)::before{
+content: "\f232";
+color: #25d366;
+border-bottom: 4px solid #1df248;
+
+
+  } 
+
+  ul li:nth-child(3)::before{
+    content: "\f09a";
+    color:  #1d6bf2;
+    border-bottom: 5px solid #3325d3;;
+    
+    
+      }
+
+  ul li:hover::before{
+    height: 100%;
+  }
